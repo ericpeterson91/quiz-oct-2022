@@ -61,3 +61,16 @@
     background-color: #56a5eb;
     width: 0%;
   }
+
+  .final-msg {
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .final-btn {
+    text-align: center;
+    width: 40vw;
+    margin: 40px auto;
+  }
