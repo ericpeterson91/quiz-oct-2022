@@ -114,3 +114,9 @@
     box-shadow: none;
     transform: none;
   }
+
+  .game-board {
+    display: none;
+    height: 100vh;
+    margin-top: 40px;
+  }

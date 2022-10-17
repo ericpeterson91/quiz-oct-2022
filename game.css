@@ -65,6 +65,8 @@
   .final-msg {
     font-size: 50px;
     text-align: center;
+    margin-top: 220px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
   }

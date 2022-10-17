@@ -4,11 +4,19 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
+const startBtn = document.querySelector('.start-btn')
+const startBoard = document.querySelector('.start-board')
+const gameBoard = document.querySelector('.game-board')
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+
+startBtn.addEventListener('click', () => {
+    startBoard.style.display = 'none'
+    gameBoard.style.display = 'block'
+})
 
 let questions = [
   {
@@ -114,7 +122,7 @@ const reset = () => {
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     //go to the end page
-    return container.innerHTML = `<div class='final-msg'>You scored ${score} out of 100!<button class='btn final-btn' onclick=reset()>Retry</button></div>`;
+    return gameBoard.innerHTML = `<div class='final-msg'>You scored ${score} out of 100!<button class='btn final-btn' onclick=reset()>Retry</button></div>`;
   }
   questionCounter++;
   progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
