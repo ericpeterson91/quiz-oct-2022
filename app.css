@@ -18,10 +18,20 @@
     margin-bottom: 1rem;
   }
   
+  img {
+    margin-bottom: 40px;
+    width: 200px;
+  }
+
+  .start-btn {
+    margin-top: -10px;
+  }
+
   h1 {
     font-size: 5.4rem;
-    color: #56a5eb;
+    color: #eb6756;
     margin-bottom: 5rem;
+    text-align: center;
   }
   
   h1 > span {
@@ -85,10 +95,10 @@
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #56a5eb;
+    border: 0.1rem solid #eb6756;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #56a5eb;
+    color: #eb6756;
     background-color: white;
   }
   

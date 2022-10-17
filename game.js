@@ -114,7 +114,7 @@ const reset = () => {
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     //go to the end page
-    return container.innerHTML = `<div class='final-msg'>You scored ${score} out of 10!<button class='btn final-btn' onclick=reset()>Retry</button></div>`;
+    return container.innerHTML = `<div class='final-msg'>You scored ${score} out of 100!<button class='btn final-btn' onclick=reset()>Retry</button></div>`;
   }
   questionCounter++;
   progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
